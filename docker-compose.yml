@@ -1,0 +1,15 @@
+services:
+  develop:
+      image: "meteor/meteor-base"
+      container_name: meteor-develop
+      # port: "3000:3000"
+      volumes: 
+        - /home/ubuntu/meteor/meteor-docker/app:/app 
+      environment:
+          NODE_ENV: production
+          ROOT_URL: http://127.0.0.1:3000
+          port:  http://127.0.0.1:3000
+      stdin_open: true  # 相当于 -i
+      tty: true  # 相当于 -t
+      command: /bin/bash
+
