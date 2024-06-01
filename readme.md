@@ -14,3 +14,6 @@ sudo pip install docker-compose
 docker compose up
 ```
 
+# meteor 教程
+## 创建一个新的包
+
